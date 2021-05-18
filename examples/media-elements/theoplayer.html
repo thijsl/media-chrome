@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>Media Chrome DASH Media Example</title>
+  <script type="module" src="//cdn.theoplayer.com/dash/theoplayer/THEOplayer.js"></script>
+  <script type="module" src="theoplayer-video-element/dist/theoplayer-video-element.js"></script>
+  <script type="module" src="../../dist/index.js"></script>
+</head>
+<body>
+
+<media-container>
+  <theoplayer-video
+    slot="media"
+    src="https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd"
+  ></theoplayer-video>
+  <media-control-bar>
+    <media-play-button></media-play-button>
+    <media-progress-range></media-progress-range>
+    <media-mute-button></media-mute-button>
+    <media-volume-range></media-volume-range>
+    <media-fullscreen-button></media-fullscreen-button>
+  </media-control-bar>
+</media-container>
+
+</body>
+</html>
